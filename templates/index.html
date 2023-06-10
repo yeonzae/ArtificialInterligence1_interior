@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interior Style Selection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333333;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #5f9ea0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .btn:hover {
+            background-color: #4682b4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Interior Style</h1>
+        <form action="/result" method="post">
+            <div class="buttons">
+                <button type="submit" name="style" value="Asian" class="btn">Asian Style</button>
+                <button type="submit" name="style" value="Coastal" class="btn">Coastal Style</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
