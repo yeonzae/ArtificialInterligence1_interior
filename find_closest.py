@@ -1,6 +1,5 @@
 import pickle
 from scipy.spatial import distance
-import pandas as pd
 
 # Load in the rgb-pantone mapping
 rgb_to_pantone = pickle.load(open("rgb_to_pantone.p", "rb"))
