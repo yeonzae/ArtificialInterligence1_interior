@@ -162,7 +162,10 @@
                 <img src="{{ url_for('static', filename='images/' + images[i]) }}" alt="Sample Image">
                 <img src="{{ url_for('static', filename='images/' + palettes[i]) }}" alt="Color Palette">
                 <div class="color-code">
-                    <span>{{ color_codes[i] }}</span><br>
+                    <span>RGB: {{ color_codes[i] }}</span><br>
+                </div>
+                <div class="pantone-code">
+                    <span>Pantone Color: {{ pantone_codes[i] }}</span><br>
                 </div>
             </div>
             
